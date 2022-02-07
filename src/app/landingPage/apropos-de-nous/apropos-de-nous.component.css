@@ -1,0 +1,35 @@
+.bg-lightMoutard-100 {
+  background-color: var(--lightMotard);
+}
+
+
+@media (min-width: 600px) {
+  .rounded {
+    border-radius: 200px;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .rounded {
+    border-radius: 100px;
+  }
+
+}
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(-2%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-slow-bounce {
+  animation: bounce 1500ms infinite;
+}
